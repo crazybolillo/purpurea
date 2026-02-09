@@ -1,0 +1,12 @@
+[submodule "vendor/arm-cmake"]
+	path = vendor/arm-cmake
+	url = https://github.com/vpetrigo/arm-cmake-toolchains.git
+[submodule "vendor/cmsis-device-f0"]
+	path = vendor/cmsis-device-f0
+	url = https://github.com/STMicroelectronics/cmsis-device-f0.git
+[submodule "vendor/stm32f0xx-hal-driver"]
+	path = vendor/stm32f0xx-hal-driver
+	url = https://github.com/STMicroelectronics/stm32f0xx-hal-driver.git
+[submodule "vendor/cmsis-6"]
+	path = vendor/cmsis-6
+	url = https://github.com/ARM-software/CMSIS_6.git
