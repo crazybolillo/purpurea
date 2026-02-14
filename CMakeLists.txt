@@ -6,7 +6,7 @@ project(purpurea
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
-
+set(CMAKE_C_CLANG_TIDY clang-tidy)
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -fno-integrated-as")
 
 set(MCU "stm32f070f6")

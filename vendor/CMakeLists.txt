@@ -3,6 +3,12 @@ set(STARTUP_stm32f070f6 "startup_stm32f070x6.s")
 
 set(STARTUP_FILE "${CMAKE_CURRENT_LIST_DIR}/${STARTUP_${MCU}}")
 
+file(GLOB_RECURSE VENDOR_SOURCES
+    "${CMAKE_CURRENT_LIST_DIR}/*.c"
+    "${CMAKE_CURRENT_LIST_DIR}/*.h"
+)
+set_source_files_properties(${VENDOR_SOURCES} PROPERTIES SKIP_LINTING ON)
+
 add_library(stm32_system
     cmsis-device-f0/Source/Templates/system_stm32f0xx.c
     ${STARTUP_FILE}
