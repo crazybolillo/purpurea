@@ -1,0 +1,20 @@
+---
+Checks: >
+  clang-diagnostic-*,
+  clang-analyzer-*,
+  modernize-*,
+  bugprone-*,
+  readability-*,
+  performance-*,
+  -misc-*,
+  -performance-no-int-to-ptr,
+  -clang-analyzer-core.FixedAddressDereference
+
+WarningsAsErrors: >
+  clang-diagnostic-*,
+  clang-analyzer-*,
+  modernize-*,
+  bugprone-*,
+  readability-*,
+  misc-*,
+  performance-*
